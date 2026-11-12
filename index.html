@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development — Filippov Serhii</title>
+  <meta name="description" content="Modern websites, fast performance, and stunning design that works for your business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <svg viewBox="0 0 40 24" width="34" height="20"><path d="M8 0h10L10 24H0z" fill="#8b6cff"/><path d="M24 0h10l-8 24H16z" fill="#c9b8ff"/></svg>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" class="btn btn--outline btn--sm nav__cta-mobile"><span data-i18n="btn.getInTouch">Get in touch</span> <i class="arrow">↗</i></a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn is-active" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="uk">UA</button>
+          <span class="lang__pill"></span>
+        </div>
+        <a href="#contact" class="btn btn--outline btn--sm header__cta"><span data-i18n="btn.getInTouch">Get in touch</span> <i class="arrow">↗</i></a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__glow"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="tag" data-i18n="hero.tag">Web Development</span>
+          <h1 class="hero__title">
+            <span data-i18n="hero.title1">Turn Your Ideas</span><br>
+            <span data-i18n="hero.title2">Into Powerful</span><br>
+            <span class="accent" data-i18n="hero.title3">Web Experiences</span>
+          </h1>
+          <p class="hero__text" data-i18n="hero.text">Modern websites, fast performance,<br>and stunning design that works for your business.</p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary"><span data-i18n="btn.letsTalk">Let's Talk</span> <i class="arrow">↗</i></a>
+            <a href="#portfolio" class="btn btn--ghost"><span data-i18n="btn.viewPortfolio">View Portfolio</span> <i class="circle">›</i></a>
+          </div>
+          <a href="#about" class="scroll-hint">
+            <span class="mouse"><span></span></span>
+            <span data-i18n="hero.scroll">Scroll to explore</span>
+          </a>
+        </div>
+
+        <!-- Laptop (pure CSS + SVG) -->
+        <div class="laptop reveal" aria-hidden="true">
+          <div class="laptop__screen">
+            <svg class="laptop__wave" viewBox="0 0 400 250" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="wg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#5b3cff" stop-opacity="0"/>
+                  <stop offset=".45" stop-color="#a98bff"/>
+                  <stop offset="1" stop-color="#e3d9ff"/>
+                </linearGradient>
+                <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+              </defs>
+              <path class="w1" d="M-20 200 C 80 220, 140 60, 220 120 S 360 40, 420 20" stroke="url(#wg)" stroke-width="26" fill="none" filter="url(#blur)" opacity=".7"/>
+              <path class="w2" d="M-20 190 C 90 230, 150 70, 225 125 S 350 50, 420 30" stroke="url(#wg)" stroke-width="4" fill="none"/>
+              <path class="w3" d="M-20 210 C 70 210, 160 80, 230 135 S 340 60, 420 45" stroke="url(#wg)" stroke-width="2" fill="none" opacity=".6"/>
+            </svg>
+          </div>
+          <div class="laptop__base"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ME ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="why card reveal">
+          <div class="why__head">
+            <div>
+              <span class="tag tag--sm" data-i18n="why.tag">Why Choose Me</span>
+              <h2 class="h2" data-i18n="why.title">Modern Solutions<br>for Your Business</h2>
+            </div>
+            <p class="muted" data-i18n="why.text">I create fast, scalable, and user-friendly websites that help you grow and stand out.</p>
+          </div>
+          <div class="why__grid">
+            <div class="feature">
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+              <p data-i18n="why.f1">Blazing Fast<br>Performance</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="11" rx="1.5"/><path d="M7 19h6M10 15v4"/><rect x="18" y="9" width="4" height="9" rx="1"/></svg>
+              <p data-i18n="why.f2">Perfect on<br>Any Device</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24"><rect x="4" y="13" width="4" height="7" rx="1"/><rect x="10" y="9" width="4" height="11" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+              <p data-i18n="why.f3">SEO-Optimized<br>Structure</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>
+              <p data-i18n="why.f4">Clean &amp; Modern<br>Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section" id="portfolio">
+      <div class="container work">
+        <div class="work__text reveal">
+          <span class="tag tag--sm" data-i18n="work.tag">My Work</span>
+          <h2 class="h2 h2--lg" data-i18n="work.title">Projects<br>That Speak<br>for Themselves</h2>
+          <p class="muted" data-i18n="work.text">A selection of recent projects that showcase my approach to design and development.</p>
+          <a href="#portfolio" class="btn btn--outline"><span data-i18n="btn.viewAll">View All Projects</span> <i class="arrow">↗</i></a>
+        </div>
+
+        <div class="screens reveal" aria-hidden="true">
+          <div class="screen screen--back2">
+            <div class="screen__bar"></div>
+            <div class="person"></div>
+          </div>
+          <div class="screen screen--back1">
+            <div class="screen__bar"></div>
+            <div class="product"></div>
+            <div class="lines"><i></i><i></i><i></i></div>
+          </div>
+          <div class="screen screen--front">
+            <div class="screen__bar"><b>Λ NOVA</b><span></span><span></span><span></span><span></span></div>
+            <div class="screen__body">
+              <div>
+                <p class="screen__title" data-i18n="work.screen">Innovative Solutions for a Better Tomorrow</p>
+                <div class="lines"><i></i><i></i></div>
+                <span class="screen__btn"></span>
+              </div>
+              <div class="orb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container process">
+        <div class="reveal">
+          <span class="tag tag--sm" data-i18n="process.tag">How It Works</span>
+          <h2 class="h2" data-i18n="process.title">A Simple Process<br>for Big Results</h2>
+        </div>
+        <ol class="steps reveal">
+          <li class="step"><span class="step__num">1</span><h3 data-i18n="process.s1">Discuss Your Goals</h3><p data-i18n="process.s1t">Share your ideas and requirements.</p></li>
+          <li class="step"><span class="step__num">2</span><h3 data-i18n="process.s2">Plan the Solution</h3><p data-i18n="process.s2t">Get a clear strategy and timeline.</p></li>
+          <li class="step"><span class="step__num">3</span><h3 data-i18n="process.s3">Bring It to Life</h3><p data-i18n="process.s3t">See your project in development.</p></li>
+          <li class="step"><span class="step__num">4</span><h3 data-i18n="process.s4">Grow Your Business</h3><p data-i18n="process.s4t">Launch and achieve new results.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ RESULTS ============ -->
+    <section class="results">
+      <div class="container results__inner">
+        <div class="cubes" aria-hidden="true">
+          <div class="cube c1"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="cube c2"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="cube c3"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="results__content reveal">
+          <span class="tag tag--sm" data-i18n="results.tag">Numbers</span>
+          <h2 class="h2" data-i18n="results.title">Proven Results</h2>
+          <p class="muted" data-i18n="results.text">Numbers that reflect our commitment to quality and client success.</p>
+          <div class="stats">
+            <div class="stat"><b><span class="count" data-to="50">0</span>+</b><p data-i18n="results.s1">Projects<br>Completed</p></div>
+            <div class="stat"><b><span class="count" data-to="100">0</span>%</b><p data-i18n="results.s2">Client<br>Satisfaction</p></div>
+            <div class="stat"><b><span class="count" data-to="2">0</span>x</b><p data-i18n="results.s3">Average<br>Growth</p></div>
+            <div class="stat"><b>24/7</b><p data-i18n="results.s4">Support</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container services">
+        <div class="reveal">
+          <span class="tag tag--sm" data-i18n="services.tag">Services</span>
+          <h2 class="h2" data-i18n="services.title">Full-Cycle<br>Web Development</h2>
+          <p class="muted" data-i18n="services.text">From concept to launch — I handle every step to deliver a premium result.</p>
+          <a href="#contact" class="btn btn--outline btn--sm"><span data-i18n="btn.explore">Explore Services</span> <i class="arrow">↗</i></a>
+        </div>
+        <div class="services__grid reveal">
+          <div class="service"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><p data-i18n="services.s1">Landing Pages<br>&amp; Websites</p></div>
+          <div class="service"><svg viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg><p data-i18n="services.s2">Web Applications<br>&amp; Platforms</p></div>
+          <div class="service"><svg viewBox="0 0 24 24"><path d="M2 3h3l3 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><p data-i18n="services.s3">E-commerce<br>Solutions</p></div>
+          <div class="service"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.5-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg><p data-i18n="services.s4">UI/UX Design<br>&amp; Development</p></div>
+          <div class="service"><svg viewBox="0 0 24 24"><path d="M4 18a9 9 0 1 1 16 0"/><path d="m12 14 4-5"/><circle cx="12" cy="14" r="1.2"/></svg><p data-i18n="services.s5">Performance<br>Optimization</p></div>
+          <div class="service"><svg viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg><p data-i18n="services.s6">Ongoing Support<br>&amp; Maintenance</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section" id="reviews">
+      <div class="container reviews">
+        <div class="reveal">
+          <span class="tag tag--sm" data-i18n="reviews.tag">Reviews</span>
+          <h2 class="h2" data-i18n="reviews.title">What Clients Say</h2>
+          <p class="muted" data-i18n="reviews.text">Real feedback from people who trusted me with their projects.</p>
+          <div class="reviews__nav">
+            <button class="icon-btn" id="prev" aria-label="Previous">←</button>
+            <button class="icon-btn" id="next" aria-label="Next">→</button>
+          </div>
+        </div>
+        <div class="review card reveal">
+          <div class="review__track" id="track">
+            <figure class="review__item is-active">
+              <span class="avatar" style="--a:#b48cff;--b:#5b3cff">AK</span>
+              <div>
+                <blockquote data-i18n="reviews.r1">“Outstanding work! The website exceeded all our expectations. Design, speed, and communication were top-notch.”</blockquote>
+                <figcaption><b data-i18n="reviews.r1n">Anna K.</b><span data-i18n="reviews.r1p">Founder, Nova Studio</span></figcaption>
+              </div>
+            </figure>
+            <figure class="review__item">
+              <span class="avatar" style="--a:#7cc4ff;--b:#4b3cff">MD</span>
+              <div>
+                <blockquote data-i18n="reviews.r2">“Fast, attentive and very professional. Our conversion rate grew noticeably right after launch.”</blockquote>
+                <figcaption><b data-i18n="reviews.r2n">Mark D.</b><span data-i18n="reviews.r2p">CEO, Brightline</span></figcaption>
+              </div>
+            </figure>
+            <figure class="review__item">
+              <span class="avatar" style="--a:#ff9bd2;--b:#7a3cff">OL</span>
+              <div>
+                <blockquote data-i18n="reviews.r3">“A pleasure to work with. Every detail was thought through — and the site works perfectly on mobile.”</blockquote>
+                <figcaption><b data-i18n="reviews.r3n">Olena L.</b><span data-i18n="reviews.r3p">Marketing Lead, Orbit</span></figcaption>
+              </div>
+            </figure>
+          </div>
+          <div class="review__counter"><span class="line"></span><b id="cur">01</b>&nbsp;/ 03</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <svg class="cta__wave" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 40 C 200 40, 300 200, 600 160" stroke="#8b6cff" stroke-width="40" fill="none" opacity=".35" filter="url(#blur)"/>
+            <path d="M0 30 C 210 30, 300 190, 600 150" stroke="#b9a3ff" stroke-width="2" fill="none" opacity=".7"/>
+          </svg>
+          <div>
+            <h2 class="h2 h2--lg" data-i18n="cta.title">Ready to Start<br>Your Project?</h2>
+            <p class="muted" data-i18n="cta.text">Let's create something amazing together.</p>
+          </div>
+          <a href="mailto:hello@example.com" class="btn btn--primary btn--lg"><span data-i18n="btn.getInTouch2">Get in Touch</span> <i class="arrow">↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="logo" aria-label="Home">
+          <svg viewBox="0 0 40 24" width="34" height="20"><path d="M8 0h10L10 24H0z" fill="#8b6cff"/><path d="M24 0h10l-8 24H16z" fill="#c9b8ff"/></svg>
+        </a>
+        <nav class="footer__nav">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="#process" data-i18n="nav.process">Process</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        </nav>
+        <div class="socials">
+          <a href="#" class="icon-btn icon-btn--sm" aria-label="GitHub"><svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+          <a href="#" class="icon-btn icon-btn--sm" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+          <a href="#" class="icon-btn icon-btn--sm" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M5 8h3v11H5zM6.5 3.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10 8h3v1.6c.5-.9 1.6-1.8 3.3-1.8 3.2 0 3.7 2 3.7 4.7V19h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9V19h-3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2025</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p class="dev"><span data-i18n="footer.dev">Developed by</span> <b>Filippov Serhii</b></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
